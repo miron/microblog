@@ -19,20 +19,6 @@ class MicroblogPost:
     # Return the hashed data as the post ID
     return hashed_data
 
-# Define the P2P network node
-class MicroblogNode:
-  def __init__(self, node_id: str, username: str, host: str, port: int):
-    self.node_id = node_id
-    self.username = username
-    self.host = host
-    self.port = port
-    self.posts = [] # List of microblog posts
-    self.peers = [] # List of peer nodes
-    self.socket = None # Socket for communicating with peer nodes
-  
-  # Open the socket and listen for incoming connections
-  def listen(self):
-    self.socket = socket.socket
     
 # Define the P2P network node
 class MicroblogNode:
